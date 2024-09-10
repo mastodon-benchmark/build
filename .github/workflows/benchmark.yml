@@ -41,6 +41,8 @@ jobs:
       - uses: namespacelabs/nscloud-setup@v0
 
       - uses: namespacelabs/nscloud-setup-buildx-action@v0
+        with:
+          load-to-docker: false
 
       - uses: docker/build-push-action@v4
         with:
