@@ -22,7 +22,7 @@ jobs:
 
       - uses: docker/setup-buildx-action@v2
 
-      - uses: docker/build-push-action@v4
+      - uses: docker/build-push-action@v6
         with:
           context: ./mastodon
           platforms: linux/amd64,linux/arm64
@@ -44,7 +44,7 @@ jobs:
         with:
           load-to-docker: false
 
-      - uses: docker/build-push-action@v4
+      - uses: docker/build-push-action@v6
         with:
           context: ./mastodon
           platforms: linux/amd64,linux/arm64
